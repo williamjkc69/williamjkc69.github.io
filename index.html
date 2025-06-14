@@ -1,1 +1,414 @@
-<!DOCTYPE html><html lang="en" style="height: 100%;"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Personal portfolio by William Urbina"><meta property="og:title" content="William Urbina"><meta property="og:type" content="website"><meta property="og:url" content="https://williamjkc69.github.io/"><meta property="og:locale" content="en_US"><meta property="og:image" content="/og.png"><meta property="og:description" content="Personal portfolio by William Urbina"><link rel="icon" href="/favicon.ico"><title>William Urbina</title><link href="/css/app.2f670cc6.css" rel="preload" as="style"><link href="/css/chunk-vendors.55204a1e.css" rel="preload" as="style"><link href="/js/app.c8a7fb79.js" rel="preload" as="script"><link href="/js/chunk-vendors.25b1907e.js" rel="preload" as="script"><link href="/css/chunk-vendors.55204a1e.css" rel="stylesheet"><link href="/css/app.2f670cc6.css" rel="stylesheet"></head><body style="height: 100%;"><noscript><strong>We're sorry but portfolio-vuejs doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/js/chunk-vendors.25b1907e.js"></script><script src="/js/app.c8a7fb79.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>William Urbina - Full Stack Developer</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="container">
+        <div class="logo">WU</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <h1>William Urbina</h1>
+          <p class="hero-subtitle">Full Stack Developer</p>
+          <p class="hero-description">
+            I'm William Urbina, a Full Stack Developer with 5+ years of
+            experience building scalable web apps using Node.js, Laravel, React,
+            and Vue. I focus on writing clean code, improving performance, and
+            creating seamless user experiences. Passionate about problem-solving
+            and team collaboration, I'm always ready to turn ideas into real
+            solutions.
+          </p>
+          <div class="cta-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating particles -->
+      <div
+        class="particle"
+        style="
+          top: 20%;
+          left: 10%;
+          width: 10px;
+          height: 10px;
+          animation-delay: 0s;
+        "
+      ></div>
+      <div
+        class="particle"
+        style="
+          top: 60%;
+          left: 80%;
+          width: 15px;
+          height: 15px;
+          animation-delay: 2s;
+        "
+      ></div>
+      <div
+        class="particle"
+        style="
+          top: 30%;
+          left: 70%;
+          width: 8px;
+          height: 8px;
+          animation-delay: 4s;
+        "
+      ></div>
+      <div
+        class="particle"
+        style="
+          top: 80%;
+          left: 20%;
+          width: 12px;
+          height: 12px;
+          animation-delay: 1s;
+        "
+      ></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="/img/profile2.jpg" alt="Profile Picture" />
+          </div>
+          <div class="about-text">
+            <p>
+              I'm William Urbina, a Full Stack Developer with over 5 years of
+              experience crafting scalable web applications and APIs. I
+              specialize in modern technologies like Node.js, Laravel, React,
+              and Vue.js, and I’m passionate about writing clean, maintainable
+              code that brings real value to businesses.
+            </p>
+            <p>
+              My career has been driven by a constant desire to learn and solve
+              complex problems—whether it's optimizing backend performance,
+              refining user interfaces, or collaborating in agile environments.
+              I’ve worked with cross-functional teams to build everything from
+              internal tools to large-scale platforms used by thousands of
+              users.
+            </p>
+            <p>
+              With strong communication skills, a proactive mindset, and a keen
+              eye for user experience, I’m not just a developer—I’m a solution
+              builder who’s always thinking about how to make systems better,
+              faster, and more intuitive.
+            </p>
+            <p>Let’s build something great together.</p>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat-item fade-in">
+            <span class="stat-number">30+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-item fade-in">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item fade-in">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+      <div class="container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Nuxt.js</span>
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Vue.js</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">AWS</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Backend Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">PHP</span>
+              <!-- <span class="skill-tag">Python</span>
+              <span class="skill-tag">Django</span> -->
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">GraphQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Cloud & DevOps</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">GCP</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">Apache</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Nginx</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Tech Lead</span>
+              <span class="skill-tag">Team Leadership</span>
+              <span class="skill-tag">Communication</span>
+              <span class="skill-tag">Project Management</span>
+              <span class="skill-tag">Mentoring</span>
+              <span class="skill-tag">Agile/Scrum</span>
+              <span class="skill-tag">Code Review</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>More Techs</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">UI Solutions</span>
+              <span class="skill-tag">VSCode</span>
+              <span class="skill-tag">GitHub Copilot</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3 class="project-title">E-Commerce Platform</h3>
+            <p class="project-description">
+              A full-featured e-commerce platform with real-time inventory
+              management, secure payment processing, and advanced analytics
+              dashboard. Built for scalability and performance.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Stripe</span>
+              <span class="tech-tag">AWS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Task Management App</h3>
+            <p class="project-description">
+              A collaborative task management application with real-time
+              updates, drag-and-drop functionality, and team collaboration
+              features. Includes mobile-responsive design.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Socket.io</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Analytics Dashboard</h3>
+            <p class="project-description">
+              A comprehensive analytics dashboard for business intelligence with
+              interactive charts, real-time data visualization, and customizable
+              reporting features.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">D3.js</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Redis</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="fade-in">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="experience-timeline">
+          <div class="timeline-line"></div>
+
+          <div class="experience-item">
+            <h3 class="experience-title">Senior Full Stack Developer</h3>
+            <div class="experience-company">TechCorp Solutions</div>
+            <div class="experience-date">2022 - Present</div>
+            <p class="experience-description">
+              Leading development of enterprise-level web applications using
+              React and Node.js. Mentoring junior developers and implementing
+              best practices for code quality and testing. Collaborated with
+              cross-functional teams to deliver high-impact features that
+              improved user engagement by 40%.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3 class="experience-title">Full Stack Developer</h3>
+            <div class="experience-company">Digital Innovations Inc</div>
+            <div class="experience-date">2020 - 2022</div>
+            <p class="experience-description">
+              Developed and maintained multiple client projects using Vue.js and
+              Python/Django. Implemented CI/CD pipelines and improved deployment
+              efficiency by 60%. Worked closely with UX/UI designers to create
+              pixel-perfect, responsive web applications.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3 class="experience-title">Frontend Developer</h3>
+            <div class="experience-company">StartupXYZ</div>
+            <div class="experience-date">2019 - 2020</div>
+            <p class="experience-description">
+              Built responsive web applications using React and modern CSS
+              frameworks. Optimized application performance resulting in 50%
+              faster load times. Collaborated with backend developers to
+              integrate RESTful APIs and GraphQL endpoints.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+      <div class="container">
+        <h2 class="section-title">Let's Work Together</h2>
+        <div class="contact-content">
+          <p style="font-size: 1.1rem; color: #cccccc; margin-bottom: 2rem">
+            Ready to bring your ideas to life? I'm always interested in new
+            opportunities and exciting projects. Let's discuss how we can create
+            something amazing together.
+          </p>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Tell me about your project..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a
+            href="https://github.com/williamjkc69"
+            target="_blank"
+            class="social-link"
+            ><i data-lucide="github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/william-urbina/"
+            target="_blank"
+            class="social-link"
+            ><i data-lucide="linkedin"></i
+          ></a>
+        </div>
+        <p style="color: #a0a0a0; margin-top: 1rem">
+          ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          William Urbina.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
