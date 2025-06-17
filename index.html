@@ -1,1 +1,613 @@
-<!DOCTYPE html><html lang="en" style="height: 100%;"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Personal portfolio by William Urbina"><meta property="og:title" content="William Urbina"><meta property="og:type" content="website"><meta property="og:url" content="https://williamjkc69.github.io/"><meta property="og:locale" content="en_US"><meta property="og:image" content="/og.png"><meta property="og:description" content="Personal portfolio by William Urbina"><link rel="icon" href="/favicon.ico"><title>William Urbina</title><link href="/css/app.2f670cc6.css" rel="preload" as="style"><link href="/css/chunk-vendors.55204a1e.css" rel="preload" as="style"><link href="/js/app.c8a7fb79.js" rel="preload" as="script"><link href="/js/chunk-vendors.25b1907e.js" rel="preload" as="script"><link href="/css/chunk-vendors.55204a1e.css" rel="stylesheet"><link href="/css/app.2f670cc6.css" rel="stylesheet"></head><body style="height: 100%;"><noscript><strong>We're sorry but portfolio-vuejs doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/js/chunk-vendors.25b1907e.js"></script><script src="/js/app.c8a7fb79.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>William Urbina – Full Stack Developer | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of William Urbina, Full Stack Developer with 5+ years of experience building scalable web applications using Node.js, Laravel, React, and Vue. Explore projects, skills, and professional experience."
+    />
+    <meta
+      name="keywords"
+      content="William Urbina, Full Stack Developer, Lead Full Stack Developer, Tech Lead, Portfolio, Web Developer, Mobile Developer, Node.js, Laravel, React, Vue, JavaScript, Software Engineer"
+    />
+    <meta name="author" content="William Urbina" />
+    <link rel="canonical" href="https://williamjkc69.github.io/" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:title"
+      content="William Urbina – Full Stack Developer | Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Explore the portfolio of William Urbina, a Full Stack Developer specializing in scalable web applications and modern technologies."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://williamjkc69.github.io/" />
+    <meta
+      property="og:image"
+      content="https://williamjkc69.github.io/img/profile2.jpg"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="William Urbina – Full Stack Developer | Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore the portfolio of William Urbina, a Full Stack Developer specializing in scalable web applications and modern technologies."
+    />
+    <meta
+      name="twitter:image"
+      content="https://williamjkc69.github.io/img/profile2.jpg"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body>
+    <div class="modal" id="imgModal">
+      <button class="close" id="closeModal">&times;</button>
+      <img src="" alt="Full Image" id="modalImg" />
+    </div>
+
+    <!-- Header -->
+    <header>
+      <nav class="container">
+        <div class="logo">William</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <!-- <li><a href="#contact">Contact</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <h1>William Urbina</h1>
+          <p class="hero-subtitle">Full Stack Developer</p>
+          <p class="hero-description">
+            I'm William Urbina, a Full Stack Developer with 5+ years of
+            experience building scalable web apps using Node.js, Laravel, React,
+            and Vue. I focus on writing clean code, improving performance, and
+            creating seamless user experiences. Passionate about problem-solving
+            and team collaboration, I'm always ready to turn ideas into real
+            solutions.
+          </p>
+          <div class="cta-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <!-- <a href="#contact" class="btn btn-secondary">Get In Touch</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating particles -->
+      <div
+        class="particle"
+        style="
+          top: 20%;
+          left: 10%;
+          width: 10px;
+          height: 10px;
+          animation-delay: 0s;
+        "
+      ></div>
+      <div
+        class="particle"
+        style="
+          top: 60%;
+          left: 80%;
+          width: 15px;
+          height: 15px;
+          animation-delay: 2s;
+        "
+      ></div>
+      <div
+        class="particle"
+        style="
+          top: 30%;
+          left: 70%;
+          width: 8px;
+          height: 8px;
+          animation-delay: 4s;
+        "
+      ></div>
+      <div
+        class="particle"
+        style="
+          top: 80%;
+          left: 20%;
+          width: 12px;
+          height: 12px;
+          animation-delay: 1s;
+        "
+      ></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="/img/profile2.jpg" alt="Profile Picture" />
+          </div>
+          <div class="about-text">
+            <p>
+              I'm William Urbina, a Full Stack Developer with over 5 years of
+              experience crafting scalable web applications and APIs. I
+              specialize in modern technologies like Node.js, Laravel, React,
+              and Vue.js, and I’m passionate about writing clean, maintainable
+              code that brings real value to businesses.
+            </p>
+            <p>
+              My career has been driven by a constant desire to learn and solve
+              complex problems—whether it's optimizing backend performance,
+              refining user interfaces, or collaborating in agile environments.
+              I’ve worked with cross-functional teams to build everything from
+              internal tools to large-scale platforms used by thousands of
+              users.
+            </p>
+            <p>
+              With strong communication skills, a proactive mindset, and a keen
+              eye for user experience, I’m not just a developer—I’m a solution
+              builder who’s always thinking about how to make systems better,
+              faster, and more intuitive.
+            </p>
+            <p>Let’s build something great together.</p>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat-item fade-in">
+            <span class="stat-number">30+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-item fade-in">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item fade-in">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+      <div class="container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Nuxt.js</span>
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Vue.js</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">AWS</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Backend Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">PHP</span>
+              <!-- <span class="skill-tag">Python</span>
+              <span class="skill-tag">Django</span> -->
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">GraphQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Cloud & DevOps</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">GCP</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">Apache</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Nginx</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Tech Lead</span>
+              <span class="skill-tag">Team Leadership</span>
+              <span class="skill-tag">Communication</span>
+              <span class="skill-tag">Project Management</span>
+              <span class="skill-tag">Mentoring</span>
+              <span class="skill-tag">Agile/Scrum</span>
+              <span class="skill-tag">Code Review</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>More Techs</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">UI Solutions</span>
+              <span class="skill-tag">VSCode</span>
+              <span class="skill-tag">GitHub Copilot</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/img/projects/casino.png" alt="casino" class="thumb" />
+            </div>
+            <h3 class="project-title">tPromise casino game</h3>
+            <p class="project-description">
+              A landing page for a Web3 casino game where users can learn about
+              the game and win tPromise tokens through smart contract-based
+              gameplay.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">Web3</span>
+            </div>
+            <!-- <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div> -->
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/img/projects/scf.png" alt="scf music" class="thumb" />
+            </div>
+            <h3 class="project-title">SCF Music</h3>
+            <p class="project-description">
+              A web application for creating and managing events and concerts,
+              which also serves as an API for a mobile app (Android/iOS) to
+              display all available events.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">Laravel Nova</span>
+              <span class="tech-tag">API Rest</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Bootstrap</span>
+            </div>
+            <!-- <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div> -->
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/img/projects/jy.png" alt="JustYours" class="thumb" />
+            </div>
+            <h3 class="project-title">JustYours</h3>
+            <p class="project-description">
+              JustYours is an exclusive adult content platform where users can
+              buy $JUST tokens to access premium content, chat with creators,
+              and more.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Nuxt.js</span>
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+            <!-- <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div> -->
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="/img/projects/miracle.png"
+                alt="miracle"
+                class="thumb"
+              />
+            </div>
+            <h3 class="project-title">Miracle</h3>
+            <p class="project-description">
+              Miracle Software helps companies control and optimize their
+              telecom and cloud expenses through smart FinOps solutions. Trusted
+              by banks, governments, and tech firms, we've delivered hundreds of
+              cost-saving projects worldwide.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Wordpress</span>
+              <span class="tech-tag">Elementor</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Custom Plugins</span>
+            </div>
+            <!-- <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div> -->
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/img/projects/rent.png" alt="RentVault" class="thumb" />
+            </div>
+            <h3 class="project-title">RentVault</h3>
+            <p class="project-description">
+              A house rental platform where users can search properties across
+              all Canadian provinces, contact landlords directly, create rental
+              contracts, and make payments using Stripe (recurring or one-time)
+              or PayPal. The app streamlines the entire rental process—from
+              discovery to payment—in one place.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">Blade</span>
+              <span class="tech-tag">JQuery</span>
+              <span class="tech-tag">Bootstrap</span>
+              <span class="tech-tag">Stripe</span>
+            </div>
+            <!-- <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div> -->
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="/img/projects/zentroolabs.png"
+                alt="zentroolabs"
+                class="thumb"
+              />
+            </div>
+            <h3 class="project-title">ZentrooLabs</h3>
+            <p class="project-description">
+              ZentrooLabs is a team of developers and designers dedicated to
+              building innovative, high-quality software. We focus on client
+              success, agile development, and modern technology to deliver real
+              value.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">EmailJs</span>
+            </div>
+            <!-- <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="fade-in">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="experience-timeline">
+          <div class="timeline-line"></div>
+
+          <div class="experience-item">
+            <h3 class="experience-title">Full Stack Developer</h3>
+            <div class="experience-company">Zentroo Labs</div>
+            <div class="experience-date">June 2025 – Present</div>
+            <p class="experience-description">
+              At Zentroo Labs, I contribute as a Full Stack Developer, actively
+              building scalable digital solutions using modern frameworks. I
+              focus on both frontend and backend development, ensuring
+              high-quality code and performance-driven results.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3 class="experience-title">Full Stack Developer</h3>
+            <div class="experience-company">Linework, Inc. (USA)</div>
+            <div class="experience-date">March 2025 – May 2025</div>
+            <p class="experience-description">
+              At Linework, I worked on a mobile application that integrates a
+              social network (Spiral), a marketplace (Bloop), and a crypto
+              wallet for managing BTC, ETH, PEPE, Tether, and LWC. I redesigned
+              the homepage and several key screens, introduced dark mode, and
+              implemented a new login and signup flow. Additionally, I developed
+              a real-time crypto marketplace with interactive charts and coin
+              insights, and refactored inefficient code in both the frontend and
+              backend (Node.js + NestJS) to improve performance and meet tight
+              sprint deadlines.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3 class="experience-title">Full Stack Developer</h3>
+            <div class="experience-company">WXLLSPACE</div>
+            <div class="experience-date">February 2024 – July 2024</div>
+            <p class="experience-description">
+              At WXLLSPACE, a platform for mural artists to showcase work and
+              apply for commissions, I focused on enhancing the user experience
+              and optimizing performance. I refactored backend functions and
+              cleaned legacy code, resulting in a 30% improvement in loading
+              speeds. I redesigned key sections using Tailwind CSS and Material
+              UI and boosted SEO and server-side rendering using Next.js, which
+              improved search visibility and content previews.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3 class="experience-title">Full Stack Developer</h3>
+            <div class="experience-company">Age of Sam</div>
+            <div class="experience-date">June 2022 – December 2023</div>
+            <p class="experience-description">
+              As a Full Stack Developer at Age of Sam, a blockchain gaming
+              company based on Solana NFTs, I created a modular component
+              library in React and TypeScript, improving development speed by
+              40%. I worked with Next.js and Node.js to enhance code quality and
+              reduce bugs, and I implemented MongoDB solutions to optimize data
+              storage and retrieval, reducing database response times by 20%.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3 class="experience-title">Lead Full Stack Developer</h3>
+            <div class="experience-company">ITProject</div>
+            <div class="experience-date">June 2022 – September 2022</div>
+            <p class="experience-description">
+              In this role, I led the development of a government web
+              application used for registering users into scholarship and
+              training programs. I was responsible for the core system
+              infrastructure, including frontend and backend components. I
+              developed dynamic, intelligent forms with robust validation logic
+              based on user input, which significantly enhanced usability and
+              data quality.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3 class="experience-title">Full Stack Developer</h3>
+            <div class="experience-company">Symple</div>
+            <div class="experience-date">May 2020 – February 2022</div>
+            <p class="experience-description">
+              At Symple, I worked on a platform to manage property certificates
+              and services across the UK. I developed tools using Laravel and
+              Vue to automate property processes and integrated over 80% of
+              internal company services with external third-party APIs. I also
+              enhanced the frontend using Inertia.js and Vue.js, leading to a
+              20% increase in user engagement.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <h3 class="experience-title">Full Stack Developer</h3>
+            <div class="experience-company">Trez Labs</div>
+            <div class="experience-date">December 2019 – October 2021</div>
+            <p class="experience-description">
+              At Trez Labs, a technology agency, I developed web applications
+              for clients across various industries using Laravel and Vue.js. I
+              created modular components to increase development efficiency and
+              implemented advanced MySQL features and state management tools
+              like Vuex and Vue Router to significantly boost application
+              performance and reduce manual processes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- <section id="contact" class="fade-in">
+      <div class="container">
+        <h2 class="section-title">Let's Work Together</h2>
+        <div class="contact-content">
+          <p style="font-size: 1.1rem; color: #cccccc; margin-bottom: 2rem">
+            Ready to bring your ideas to life? I'm always interested in new
+            opportunities and exciting projects. Let's discuss how we can create
+            something amazing together.
+          </p>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Tell me about your project..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a
+            href="https://github.com/williamjkc69"
+            target="_blank"
+            class="social-link"
+            ><i data-lucide="github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/william-urbina/"
+            target="_blank"
+            class="social-link"
+            ><i data-lucide="linkedin"></i
+          ></a>
+        </div>
+        <p style="color: #a0a0a0; margin-top: 1rem">
+          ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          William Urbina.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
