@@ -66,38 +66,38 @@ function createParticle() {
 setInterval(createParticle, 3000);
 
 // Contact form handling
-document
-  .querySelector(".contact-form")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
+// document
+//   .querySelector(".contact-form")
+//   .addEventListener("submit", function (e) {
+//     e.preventDefault();
 
-    // Get form data
-    const formData = new FormData(this);
-    const name = formData.get("name");
-    const email = formData.get("email");
-    const subject = formData.get("subject");
-    const message = formData.get("message");
+//     // Get form data
+//     const formData = new FormData(this);
+//     const name = formData.get("name");
+//     const email = formData.get("email");
+//     const subject = formData.get("subject");
+//     const message = formData.get("message");
 
-    // Simple validation
-    if (!name || !email || !subject || !message) {
-      alert("Please fill in all fields.");
-      return;
-    }
+//     // Simple validation
+//     if (!name || !email || !subject || !message) {
+//       alert("Please fill in all fields.");
+//       return;
+//     }
 
-    // Simulate form submission
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    submitBtn.textContent = "Sending...";
-    submitBtn.disabled = true;
+//     // Simulate form submission
+//     const submitBtn = this.querySelector('button[type="submit"]');
+//     const originalText = submitBtn.textContent;
+//     submitBtn.textContent = "Sending...";
+//     submitBtn.disabled = true;
 
-    // Simulate API call delay
-    setTimeout(() => {
-      alert("Thank you for your message! I'll get back to you soon.");
-      this.reset();
-      submitBtn.textContent = originalText;
-      submitBtn.disabled = false;
-    }, 2000);
-  });
+//     // Simulate API call delay
+//     setTimeout(() => {
+//       alert("Thank you for your message! I'll get back to you soon.");
+//       this.reset();
+//       submitBtn.textContent = originalText;
+//       submitBtn.disabled = false;
+//     }, 2000);
+//   });
 
 // Dynamic typing effect for hero subtitle
 function typeWriter(element, text, speed = 50) {
@@ -289,16 +289,6 @@ function debounce(func, wait) {
   };
 }
 
-// Optimized scroll handler
-const optimizedScrollHandler = debounce(() => {
-  const header = document.querySelector("header");
-  const scrolled = window.pageYOffset;
-  const opacity = Math.min(scrolled / 100, 1);
-  header.style.background = `rgba(10, 10, 10, ${0.9 + opacity * 0.1})`;
-}, 10);
-
-window.addEventListener("scroll", optimizedScrollHandler);
-
 const thumbs = document.querySelectorAll(".thumb");
 const modal = document.getElementById("imgModal");
 const modalImg = document.getElementById("modalImg");
@@ -322,3 +312,13 @@ modal.onclick = function (e) {
     modalImg.src = "";
   }
 };
+
+// Optimized scroll handler
+const optimizedScrollHandler = debounce(() => {
+  const header = document.querySelector("header");
+  const scrolled = window.pageYOffset;
+  const opacity = Math.min(scrolled / 100, 1);
+  header.style.background = `rgba(10, 10, 10, ${0.9 + opacity * 0.1})`;
+}, 10);
+
+window.addEventListener("scroll", optimizedScrollHandler);
