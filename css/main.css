@@ -352,7 +352,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .tech-tag {
@@ -367,6 +366,7 @@ section {
 .project-links {
   display: flex;
   gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .project-link {
@@ -585,7 +585,7 @@ footer {
     padding-left: 1rem;
   }
 
-  .hero  {
+  .hero {
     padding: 0;
   }
   .hero h1 {
@@ -638,4 +638,68 @@ html {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.project-image {
+  position: relative;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 10;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+.modal.active {
+  display: flex;
+}
+.modal img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+}
+.modal .close {
+  position: absolute;
+  top: 40px;
+  right: 32px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+@media (max-width: 600px) {
+  .modal img {
+    max-width: 98vw;
+    max-height: 80vh;
+  }
+  .modal .close {
+    top: 12px;
+    right: 16px;
+    font-size: 1.5rem;
+  }
+}
+/* Thumbnail styling */
+.thumb {
+  width: 200px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: box-shadow 0.2s;
+}
+.thumb:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }

@@ -298,3 +298,27 @@ const optimizedScrollHandler = debounce(() => {
 }, 10);
 
 window.addEventListener("scroll", optimizedScrollHandler);
+
+const thumbs = document.querySelectorAll(".thumb");
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.getElementById("closeModal");
+
+thumbs.forEach((img) => {
+  img.onclick = function () {
+    modal.classList.add("active");
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+  };
+});
+
+closeBtn.onclick = function () {
+  modal.classList.remove("active");
+  modalImg.src = "";
+};
+modal.onclick = function (e) {
+  if (e.target === modal) {
+    modal.classList.remove("active");
+    modalImg.src = "";
+  }
+};

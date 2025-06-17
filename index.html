@@ -11,10 +11,15 @@
   </head>
 
   <body>
+    <div class="modal" id="imgModal">
+      <button class="close" id="closeModal">&times;</button>
+      <img src="" alt="Full Image" id="modalImg" />
+    </div>
+
     <!-- Header -->
     <header>
       <nav class="container">
-        <div class="logo">WU</div>
+        <div class="logo">William</div>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -230,63 +235,150 @@
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
           <div class="project-card">
-            <h3 class="project-title">E-Commerce Platform</h3>
+            <div class="project-image">
+              <img src="/img/projects/casino.png" alt="casino" class="thumb" />
+            </div>
+            <h3 class="project-title">tPromise casino game</h3>
             <p class="project-description">
-              A full-featured e-commerce platform with real-time inventory
-              management, secure payment processing, and advanced analytics
-              dashboard. Built for scalability and performance.
+              A landing page for a Web3 casino game where users can learn about
+              the game and win tPromise tokens through smart contract-based
+              gameplay.
             </p>
             <div class="project-tech">
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">PostgreSQL</span>
-              <span class="tech-tag">Stripe</span>
-              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">Web3</span>
             </div>
-            <div class="project-links">
+            <!-- <div class="project-links">
               <a href="#" class="project-link">Live Demo</a>
               <a href="#" class="project-link">GitHub</a>
-            </div>
+            </div> -->
           </div>
 
           <div class="project-card">
-            <h3 class="project-title">Task Management App</h3>
+            <div class="project-image">
+              <img src="/img/projects/scf.png" alt="scf music" class="thumb" />
+            </div>
+            <h3 class="project-title">SCF Music</h3>
             <p class="project-description">
-              A collaborative task management application with real-time
-              updates, drag-and-drop functionality, and team collaboration
-              features. Includes mobile-responsive design.
+              A web application for creating and managing events and concerts,
+              which also serves as an API for a mobile app (Android/iOS) to
+              display all available events.
             </p>
             <div class="project-tech">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">Laravel Nova</span>
+              <span class="tech-tag">API Rest</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Bootstrap</span>
+            </div>
+            <!-- <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div> -->
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/img/projects/jy.png" alt="JustYours" class="thumb" />
+            </div>
+            <h3 class="project-title">JustYours</h3>
+            <p class="project-description">
+              JustYours is an exclusive adult content platform where users can
+              buy $JUST tokens to access premium content, chat with creators,
+              and more.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Nuxt.js</span>
               <span class="tech-tag">Vue.js</span>
-              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">Laravel</span>
               <span class="tech-tag">MongoDB</span>
-              <span class="tech-tag">Socket.io</span>
-              <span class="tech-tag">Docker</span>
             </div>
-            <div class="project-links">
+            <!-- <div class="project-links">
               <a href="#" class="project-link">Live Demo</a>
               <a href="#" class="project-link">GitHub</a>
-            </div>
+            </div> -->
           </div>
 
           <div class="project-card">
-            <h3 class="project-title">Analytics Dashboard</h3>
+            <div class="project-image">
+              <img
+                src="/img/projects/miracle.png"
+                alt="miracle"
+                class="thumb"
+              />
+            </div>
+            <h3 class="project-title">Miracle</h3>
             <p class="project-description">
-              A comprehensive analytics dashboard for business intelligence with
-              interactive charts, real-time data visualization, and customizable
-              reporting features.
+              Miracle Software helps companies control and optimize their
+              telecom and cloud expenses through smart FinOps solutions. Trusted
+              by banks, governments, and tech firms, we've delivered hundreds of
+              cost-saving projects worldwide.
             </p>
             <div class="project-tech">
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">D3.js</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">FastAPI</span>
-              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">Wordpress</span>
+              <span class="tech-tag">Elementor</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Custom Plugins</span>
             </div>
-            <div class="project-links">
+            <!-- <div class="project-links">
               <a href="#" class="project-link">Live Demo</a>
               <a href="#" class="project-link">GitHub</a>
+            </div> -->
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/img/projects/rent.png" alt="RentVault" class="thumb" />
             </div>
+            <h3 class="project-title">RentVault</h3>
+            <p class="project-description">
+              A house rental platform where users can search properties across
+              all Canadian provinces, contact landlords directly, create rental
+              contracts, and make payments using Stripe (recurring or one-time)
+              or PayPal. The app streamlines the entire rental process—from
+              discovery to payment—in one place.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">Blade</span>
+              <span class="tech-tag">JQuery</span>
+              <span class="tech-tag">Bootstrap</span>
+              <span class="tech-tag">Stripe</span>
+            </div>
+            <!-- <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div> -->
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="/img/projects/zentroolabs.png"
+                alt="zentroolabs"
+                class="thumb"
+              />
+            </div>
+            <h3 class="project-title">ZentrooLabs</h3>
+            <p class="project-description">
+              ZentrooLabs is a team of developers and designers dedicated to
+              building innovative, high-quality software. We focus on client
+              success, agile development, and modern technology to deliver real
+              value.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">EmailJs</span>
+            </div>
+            <!-- <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">GitHub</a>
+            </div> -->
           </div>
         </div>
       </div>
